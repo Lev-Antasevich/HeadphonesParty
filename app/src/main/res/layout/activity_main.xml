@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/faster_one"
-        android:text="LOGO_NAME"
+        android:text="Music party"
         android:textAlignment="center"
         android:transitionName="logo_text"
         android:textSize="60dp"

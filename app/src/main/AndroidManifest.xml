@@ -10,7 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Headphones_Party">
         <activity
-            android:name=".LoginScreen"
+            android:name=".MediaPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".AvatarAndNick"
+            android:exported="false" />
+        <activity
+            android:name=".PartyCreation"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
             android:exported="false" />
         <activity
             android:name=".Dashboard"

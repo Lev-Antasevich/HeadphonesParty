@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#B8D5DF"
-    tools:context=".LoginScreen"
+    tools:context=".Registration"
     android:padding="20dp">
     
     <ImageView
@@ -20,7 +20,7 @@
         android:id="@+id/logo_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello there, Welcome Back!"
+        android:text="Are you ready for the action?"
         android:textSize="40sp"
         android:fontFamily="@font/faster_one"/>
 
@@ -28,7 +28,7 @@
         android:id="@+id/slogan_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In to continue"
+        android:text="Enter Party Code to continue"
         android:textSize="18sp"
         android:fontFamily="@font/faster_one"/>
 
@@ -42,8 +42,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/username"
-            android:hint="Username"
+            android:id="@+id/PartyCodeField"
+            android:hint="Your Party Code"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
 
@@ -53,52 +53,33 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/password"
-            android:hint="Password"
-            app:passwordToggleEnabled="true"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-        </com.google.android.material.textfield.TextInputLayout>
-        
         <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:text="Forgot Password?"
-            android:layout_gravity="right"
-            android:elevation="0dp"
-            android:layout_margin="5dp"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GO"
-            android:background="#00000000"
-            android:textColor="#fff"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
-
-        <Button
+            android:id="@+id/LetsGo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00000000"
-            android:text="New User? Sing Up"
+            android:text="Lets GO"
             android:fontFamily="@font/faster_one"
-            android:textColor="#000"
+            android:textColor="#303030"
             android:layout_gravity="right"
             android:elevation="0dp"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"/>
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/Create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="70dp"
+        android:background="#00000000"
+        android:elevation="0dp"
+        android:fontFamily="@font/faster_one"
+
+        android:text="Party creation"
+        android:textColor="#303030" />
 
 
 </LinearLayout>
